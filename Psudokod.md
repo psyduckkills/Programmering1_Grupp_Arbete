@@ -45,8 +45,7 @@ uppgiftens namn.
 4. Persistens: Varje gång en uppgift läggs till eller tas bort, ska den aktuella listan sparas till en
 textfil (uppgifter.txt).
 
-###
-Ordning av hur det ska se ut 
+### Ordning av hur det ska se ut 
 ---
 Nr 1 Meny 
 Nr 2 Valet
