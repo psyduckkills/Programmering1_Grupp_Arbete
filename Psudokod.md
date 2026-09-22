@@ -47,8 +47,8 @@ textfil (uppgifter.txt).
 
 ### Ordning av hur det ska se ut 
 ---
-1. Meny
+1. Meny (1st)
 2. Valet
-3. Meny 
+3. Meny (2nd)
 4. Val eller Exit 
 5. Exit 
