@@ -1,0 +1,63 @@
+# PERSON 3 - GRÄNSSNITT OCH MENYSYSTEM
+
+
+def visa_meny():
+    print("\n--- TASK MASTER ---")
+    print("1. Lägg till uppgifter")
+    print("2. Visa mina uppgifter")
+    print("3. Hantera uppgift")
+    print("4. Avsluta")
+
+
+def hantera_meny():
+    print("\n--- HANTERA UPPGIFT ---")
+    print("1. Ta bort uppgift")
+    print("2. Ändra uppgift")
+    print("3. Ändra prioritet")
+    print("4. Tillbaka")
+
+
+def starta_program():
+
+    uppgifter = las_fran_fil()
+
+    while True:
+
+        visa_meny()
+        val = input("Välj 1-4: ")
+
+        if val == "1":
+            lagg_till_uppgifter(uppgifter)
+
+        elif val == "2":
+            visa_alla_uppgifter(uppgifter)
+
+        elif val == "3":
+
+            while True:
+
+                hantera_meny()
+                val2 = input("Välj 1-4: ")
+
+                if val2 == "1":
+                    ta_bort_uppgift(uppgifter)
+
+                elif val2 == "2":
+                    andra_uppgift(uppgifter)
+
+                elif val2 == "3":
+                    andra_prioritet(uppgifter)
+
+                elif val2 == "4":
+                    break
+
+                else:
+                    print("Fel val. Välj 1-4.")
+
+        elif val == "4":
+            spara_till_fil(uppgifter)
+            print("Task Master avslutas. Hej då!")
+            break
+
+        else:
+            print("Fel val. Välj 1-4.")
